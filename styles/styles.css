@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-primaria: #f6f6f6;
+    --cor-secundaria: #2ecc71;
+    --cor-terciaria: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(background.jpg);
+}
+section{
+    opacity: 90%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: var(--cor-terciaria);
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+section h2{
+    color: var(--cor-primaria);
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: var(--cor-primaria);
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: var(--cor-primaria);
+    color: #101026;
+    border-radius: 16px;
+}
+
+/*Página do Obrigado*/
+
+.main{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background-image: url(background.jpg);
+   flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: var(--cor-primaria);
+    margin-bottom: 30px;
+}
+.paragrafo{
+    color: var(--cor-primaria);
+    margin-bottom: 50px;
+    font-size: 21px;
+    
+}
+.btn{
+    padding: 15px 55px;
+    background: var(--cor-primaria);
+    background: transparent;
+    border: solid 2px var(--cor-secundaria);
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-size: 18px;
+    border-radius: 21px;
+
+}
+.btn:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    transition: all 0.5s;
+}
